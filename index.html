@@ -79,6 +79,19 @@
             transform: translateY(-2px);
         }
 
+        .section-title {
+            color: white;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .projects-section {
+            margin-bottom: 3rem;
+        }
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -214,27 +227,44 @@
             </div>
         </header>
 
-        <main class="projects-grid">
-            <a href="/me/" class="project-card">
-                <div class="project-icon">👤</div>
-                <h2>Resume & Experience</h2>
-                <p>My professional resume featuring work experience, skills, education, technical expertise, and educational content from my YouTube channel.</p>
-                <span class="project-link">View Resume</span>
-            </a>
+        <main>
+            <section class="projects-section">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <a href="/me/" class="project-card">
+                        <div class="project-icon">👤</div>
+                        <h2>Resume & Experience</h2>
+                        <p>My professional resume featuring work experience, skills, education, technical expertise, and educational content from my YouTube channel.</p>
+                        <span class="project-link">View Resume</span>
+                    </a>
 
-            <a href="/use-case-generator/" class="project-card">
-                <div class="project-icon">🚀</div>
-                <h2>Use Case Generator</h2>
-                <p>An intelligent tool for generating comprehensive use cases and product requirements for technical projects.</p>
-                <span class="project-link">Launch Tool</span>
-            </a>
+                    <a href="/use-case-generator/" class="project-card">
+                        <div class="project-icon">🚀</div>
+                        <h2>Use Case Generator</h2>
+                        <p>An intelligent tool for generating comprehensive use cases and product requirements for technical projects.</p>
+                        <span class="project-link">Launch Tool</span>
+                    </a>
+                </div>
+            </section>
 
-            <a href="https://github.com/stephendelaney/The-Product-Manager-Interview-Project" class="project-card" target="_blank" rel="noopener noreferrer">
-                <div class="project-icon">📚</div>
-                <h2>PM Interview Project</h2>
-                <p>Resources and insights for product manager interviews, covering common questions, frameworks, and best practices.</p>
-                <span class="project-link">View Project</span>
-            </a>
+            <section class="projects-section">
+                <h2 class="section-title">Contributing To</h2>
+                <div class="projects-grid">
+                    <a href="https://github.com/stephendelaney/The-Product-Manager-Interview-Project" class="project-card" target="_blank" rel="noopener noreferrer">
+                        <div class="project-icon">📚</div>
+                        <h2>PM Interview Project</h2>
+                        <p>Resources and insights for product manager interviews, covering common questions, frameworks, and best practices.</p>
+                        <span class="project-link">View Project</span>
+                    </a>
+
+                    <a href="https://github.com/stephendelaney/school-of-sre" class="project-card" target="_blank" rel="noopener noreferrer">
+                        <div class="project-icon">🎓</div>
+                        <h2>School of SRE</h2>
+                        <p>Educational content and resources for Site Reliability Engineering practices and principles.</p>
+                        <span class="project-link">View Project</span>
+                    </a>
+                </div>
+            </section>
         </main>
 
         <footer>
