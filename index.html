@@ -159,6 +159,35 @@
             transform: translateX(4px);
         }
 
+        .featured-section {
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s ease-out 0.1s backwards;
+        }
+
+        .featured-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--text-dark);
+            display: block;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .featured-card .project-icon {
+            margin: 0 auto 1.5rem auto;
+        }
+
         footer {
             text-align: center;
             color: white;
@@ -228,16 +257,18 @@
         </header>
 
         <main>
+            <section class="featured-section">
+                <a href="/me/" class="featured-card">
+                    <div class="project-icon">👤</div>
+                    <h2>Resume & Experience</h2>
+                    <p>My professional resume featuring work experience, skills, education, technical expertise, and educational content from my YouTube channel.</p>
+                    <span class="project-link">View Resume</span>
+                </a>
+            </section>
+
             <section class="projects-section">
                 <h2 class="section-title">My AI Projects</h2>
                 <div class="projects-grid">
-                    <a href="/me/" class="project-card">
-                        <div class="project-icon">👤</div>
-                        <h2>Resume & Experience</h2>
-                        <p>My professional resume featuring work experience, skills, education, technical expertise, and educational content from my YouTube channel.</p>
-                        <span class="project-link">View Resume</span>
-                    </a>
-
                     <a href="/use-case-generator/" class="project-card">
                         <div class="project-icon">🚀</div>
                         <h2>Use Case Generator</h2>
