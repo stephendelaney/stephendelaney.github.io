@@ -168,6 +168,29 @@
             transform: translateX(4px);
         }
 
+        .project-card--private {
+            cursor: default;
+            opacity: 0.85;
+        }
+
+        .project-card--private:hover {
+            transform: none;
+            box-shadow: var(--card-shadow);
+        }
+
+        .project-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--secondary-gray);
+        }
+
+        .project-status::before {
+            content: '🔒';
+        }
+
         .featured-section {
             margin-bottom: 3rem;
             animation: fadeInUp 0.8s ease-out 0.1s backwards;
@@ -294,12 +317,19 @@
                         <span class="project-link">Launch Tool</span>
                     </a>
 
-                    <a href="https://github.com/stephendelaney/langchain_ollama" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/stephendelaney/pitch-control" class="project-card" target="_blank" rel="noopener noreferrer">
+                        <div class="project-icon">⚽</div>
+                        <h2>Pitch Control</h2>
+                        <p>A soccer-manager data platform built for production data-engineering and SRE rigor — a Medallion data lake, Customer Data Platform, identity stitching, and the full DevOps quartet (IaC, CI/CD, SRE, decision logs).</p>
+                        <span class="project-link">View Project</span>
+                    </a>
+
+                    <div class="project-card project-card--private">
                         <div class="project-icon">🤖</div>
                         <h2>LangChain RAG System</h2>
                         <p>Retrieval-Augmented Generation system using LangChain and local Llama models for querying technical documentation with ChromaDB vector storage.</p>
-                        <span class="project-link">View Project</span>
-                    </a>
+                        <span class="project-status">Private — Under Review</span>
+                    </div>
 
                     <a href="https://github.com/stephendelaney/OpsAgent" class="project-card" target="_blank" rel="noopener noreferrer">
                         <div class="project-icon">🚨</div>
